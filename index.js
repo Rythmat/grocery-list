@@ -9,8 +9,7 @@ const groceryList = [
   { id: 8, name: "sourdough", price: 5.5, category: "grains", quantity: 81 },
 ];
 
-// Create the following functions
-
+// CREATE THE FOLLOWING FUNCTIONS
 
 // logNames => Takes in an array of items and console.logs the name of each item in the given array. Hint: use .forEach
 const logNames = (itemList) => {
@@ -24,11 +23,9 @@ const logNames = (itemList) => {
 
 // getUpperCaseNames => Takes in an array of items and returns an array of item names in all uppercase. Hint: use .map
 const getUpperCaseNames = (itemList) => {
-
   const names = itemList.map(groceryItem => {
     return groceryItem.name.toUpperCase();
   });
-
   return names;
 }
 //TESTING
@@ -43,7 +40,12 @@ const getItemById = (itemList, itemid) => {
   return item;
 }
 //TESTING
-// console.log(getItemById(groceryList,1));
+// for( let index = 1; index < 9; index += 1 ){
+//   console.log(getItemById(groceryList,index));
+// }
+
+
+
 
 
 // getItemPriceByName => Takes in an array of items and a name string. Returns the price of the item that matches the name that was passed in. Hint: use a loop
